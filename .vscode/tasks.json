@@ -12,8 +12,9 @@
 				"${file}",
 				"-Wall",
 				"-I \"${fileDirname}/vendor/vk/include\"",
-                "-L \"${fileDirname}/vendor/vk/lib\"",
-				"-l:vk.lib",
+                "-L \"${fileDirname}/vendor/vk/lib\"", "-l:vk.lib",
+				"-I \"${fileDirname}/vendor/glfw/include\"",
+                "-L \"${fileDirname}/vendor/glfw/lib\"", "-l:libglfw3.a",
 				"-o",
 				"${fileDirname}/build/win64/${fileBasenameNoExtension}.exe"
 			],
